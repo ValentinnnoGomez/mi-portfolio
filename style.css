@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero span {
+    background: #3b6df0;
+    padding: 3px 6px;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    padding: 80px;
+    align-items: center;
+}
+
+.presentacion img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.presentacion h3 {
+    color: #6c7bbd;
+    margin-bottom: 15px;
+}
+
+.presentacion ul {
+    margin-top: 15px;
+}
+
+.presentacion li {
+    margin-bottom: 8px;
+}
+
+.herramientas h3,
+.proyectos h3 {
+    background: #8a8060;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.logos img {
+    width: 80px;
+}
+
+.proyectos .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 60px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h4 {
+    margin: 10px 0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('img/fondo.avif'); 
+    
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* El bloque de texto sube un poco */
+.hero-content {
+    margin-top: -60px; 
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;    /* Lo subí un poquito más de 3 a 3.5 */
+    font-weight: 800;     /* Esto le da el grosor de "Negrita" fuerte */
+    margin-bottom: 5px;   /* Reduce el espacio con el subtítulo */
+    letter-spacing: -1px; /* Junta un poquito las letras para un look más moderno */
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;     /* Un poco más delgado para que el nombre destaque */
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    background-color: #4a4ae2;
+    padding: 2px 8px;     /* Un poco más de aire a los lados del azul */
+    border-radius: 3px;   /* Suaviza las esquinas del resaltado */
+}
+
+/* Esto hará que tus proyectos se vean ordenados en filas */
+/* Esto alinea las tarjetas una al lado de la otra */
+/* El contenedor que obliga a los hijos a ponerse uno al lado del otro */
+.proyectos-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* ESTO CENTRA LAS TARJETAS RESPECTO AL TÍTULO */
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;         /* Por si la pantalla es pequeña */
+}
+
+/* Estilo de la tarjeta individual */
+.proyecto-card {
+    width: 320px;            /* Ancho fijo para que se vea prolijo */
+    background-color: transparent;
+    text-align: center;      /* Centra el texto como en tu captura */
+}
+
+/* Estilo de la imagen */
+.proyecto-card img {
+    width: 100%;             /* Se ajusta al ancho de la tarjeta */
+    height: auto;
+    border-radius: 4px;      /* Bordes suaves */
+    display: block;
+}
+
+/* Estilo del bloque de texto (el fondo marrón claro que tienes) */
+.proyecto-info {
+    background-color: #a39677; /* El color de tus capturas */
+    padding: 15px;
+    margin-top: -5px;          /* Para que pegue con la imagen */
+}
+
+/* Estilo del enlace en el título */
+.proyecto-card h3 a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.proyecto-card p {
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.barra-titulo {
+    background-color: #a39677;
+    color: white;
+    text-align: center; /* ESTO LO PONE EN EL MEDIO */
+    padding: 15px 0;
+    font-size: 1.5rem;
+    width: 100%;        /* Asegura que ocupe todo el ancho para centrar bien */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Contenedor principal del menú */
+.nav {
+    display: flex;
+    justify-content: flex-end; /* Alinea todo a la derecha */
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+}
+
+/* Enlaces generales del nav */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio uniforme entre Inicio, Linkedin y Lupa */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* EL BOTÓN DE LINKEDIN */
+.btn-linkedin {
+    background-color: #0077b5; /* Azul LinkedIn */
+    color: white !important;   /* Texto siempre blanco */
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-linkedin:hover {
+    background-color: #005a87; /* Oscurece al pasar el mouse */
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+}
+
+/* Icono de búsqueda */
+.search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
