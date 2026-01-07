@@ -1,3 +1,36 @@
+/* --- AJUSTES PARA CELULARES --- */
+@media (max-width: 768px) {
+    
+    /* El Hero (título principal) baja el tamaño de letra */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Los proyectos dejan de estar en fila y se ponen en columna */
+    .proyectos-fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto-card {
+        width: 90%; /* Ocupa casi todo el ancho del celular */
+        max-width: none;
+    }
+
+    /* La presentación (tu foto y texto) se pone uno debajo del otro */
+    .presentacion {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* El menú de arriba se ajusta */
+    .nav {
+        padding: 10px 20px;
+        justify-content: center;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
