@@ -1,35 +1,3 @@
-/* --- AJUSTES PARA CELULARES --- */
-@media (max-width: 768px) {
-    
-    /* El Hero (título principal) baja el tamaño de letra */
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    /* Los proyectos dejan de estar en fila y se ponen en columna */
-    .proyectos-fila {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .proyecto-card {
-        width: 90%; /* Ocupa casi todo el ancho del celular */
-        max-width: none;
-    }
-
-    /* La presentación (tu foto y texto) se pone uno debajo del otro */
-    .presentacion {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* El menú de arriba se ajusta */
-    .nav {
-        padding: 10px 20px;
-        justify-content: center;
-    }
-}
 
 * {
     margin: 0;
@@ -280,4 +248,63 @@
     cursor: pointer;
     font-size: 1.2rem;
     margin-left: 10px;
+}
+
+
+/* --- ARREGLO PARA MÓVIL --- */
+@media (max-width: 768px) {
+    
+    /* 1. Evita que la presentación se rompa (tu foto y texto) */
+    .presentacion {
+        display: flex;
+        flex-direction: column; /* Ponemos uno abajo del otro */
+        padding: 20px;          /* Menos margen a los costados */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .presentacion img {
+        max-width: 200px;       /* Achicamos tu foto para que no ocupe todo */
+        margin: 0 auto;
+    }
+
+    /* 2. Ajustamos los títulos del Hero que se ven gigantes */
+    .hero-content h1 {
+        font-size: 1.8rem !important; /* Letra más chica para el nombre */
+    }
+
+    .hero-content h2 {
+        font-size: 1.1rem !important;
+    }
+
+    /* 3. Las herramientas (logos) que no se amontonen */
+    .logos {
+        flex-wrap: wrap;        /* Si no entran, que bajen */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logos img {
+        width: 50px;            /* Logos más chicos */
+    }
+
+    /* 4. LOS PROYECTOS (Lo más importante) */
+    .proyectos-fila {
+        flex-direction: column; /* En fila no entran, así que uno abajo del otro */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .proyecto-card {
+        width: 100% !important; /* Que ocupe todo el ancho del celu */
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+
+    /* 5. Ajuste del menú de arriba */
+    .nav {
+        padding: 10px;
+        flex-direction: row;    /* Mantenemos horizontal pero más apretado */
+        font-size: 0.9rem;
+    }
 }
