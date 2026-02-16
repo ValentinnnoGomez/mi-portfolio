@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Videojuegos | Medina Valentino</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+
+    <nav class="nav-detalle">
+        <div class="contenedor-nav">
+            <a href="index.html" class="btn-volver">
+                <span class="flecha">←</span> Volver al Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <main class="contenedor-proyecto">
+        <header class="proyecto-header">
+            <h1>🎮 Histórico de Ventas: Industria de Videojuegos</h1>
+            <div class="meta-data">
+                <p><strong>🛠 Herramientas:</strong> Power BI / Excel</p>
+                <p><strong>🔍 Análisis:</strong> Evolución Histórica y Market Share</p>
+                <p><strong>👤 Rol:</strong> Analista de Datos</p>
+            </div>
+        </header>
+
+        <section class="seccion">
+            <h2>1. Contexto y problema</h2>
+            <p>La industria de los videojuegos genera grandes volúmenes de datos relacionados con ventas, plataformas y géneros. Sin embargo, los datos crudos dificultan identificar patrones y analizar la evolución histórica.</p>
+            <div class="callout">
+                <p><strong>El problema:</strong> Transformar un dataset de ventas en un reporte visual e interactivo para analizar el desempeño global desde múltiples perspectivas.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>2. Preguntas de análisis</h2>
+            <ul class="lista-videojuegos">
+                <li>¿Cómo evolucionaron las ventas de videojuegos a lo largo de los años?</li>
+                <li>¿Qué regiones concentran la mayor cantidad de ventas?</li>
+                <li>¿Qué géneros generan mayores ingresos y cómo se distribuyen?</li>
+                <li>¿Qué plataformas tuvieron mayor impacto en las ventas totales?</li>
+            </ul>
+        </section>
+
+        <section class="seccion">
+            <h2>3. Proceso de análisis</h2>
+            
+            <div class="paso">
+                <h3>3.1 Carga y comprensión</h3>
+                <p>Se partió de un dataset histórico que incluía variables como nombre, plataforma, género y ventas en millones.</p>
+                <figure class="contenedor-img-proyecto">
+                    <img src="img/inicio.png" alt="Dataset original" class="img-evidencia">
+                    <figcaption>Vista inicial de los datos de ventas sin procesar.</figcaption>
+                </figure>
+            </div>
+
+            <div class="paso">
+                <h3>3.2 Limpieza y preparación</h3>
+                <p>Se realizó la corrección de formatos numéricos y la normalización de categorías para asegurar una base confiable.</p>
+                <figure class="contenedor-img-proyecto">
+                    <img src="img/limpieza.png" alt="Dataset limpio" class="img-evidencia">
+                    <figcaption>Captura del dataset tras el proceso de limpieza y ETL.</figcaption>
+                </figure>
+            </div>
+
+            <div class="paso">
+                <h3>3.3 Análisis exploratorio</h3>
+                <p>Utilicé tablas dinámicas para identificar tendencias y picos de ventas en determinados períodos antes de la visualización final.</p>
+                <figure class="contenedor-img-proyecto">
+                    <img src="img/tabla_dinamica.png" alt="Análisis exploratorio" class="img-evidencia">
+                    <figcaption>Exploración de datos mediante tablas dinámicas en Excel.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h2>4. Visualización y Dashboard</h2>
+            <p>Se desarrolló un dashboard interactivo en Power BI que permite explorar ventas por región, plataforma y género en tiempo real.</p>
+            
+            <figure class="contenedor-img-proyecto dashboard-destacado-vj">
+                <img src="img/videojuegos.png" alt="Dashboard Final Power BI" class="img-evidencia">
+                <figcaption>Reporte final interactivo: Análisis de ventas por categorías y años.</figcaption>
+            </figure>
+        </section>
+
+        <section class="seccion conclusiones-vj">
+            <h2>5. Conclusiones</h2>
+            <p>El proyecto logró transformar datos dispersos en información accionable, permitiendo identificar patrones claros de consumo en mercados globales de videojuegos.</p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; color: #888; font-size: 0.9rem;">
+        <p>&copy; 2026 Medina Valentino - Data Analyst Portfolio</p>
+    </footer>
+
+</body>
+</html>

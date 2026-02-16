@@ -1,0 +1,142 @@
+/* VARIABLES DE COLOR */
+:root {
+    --vj-purpura-oscuro: #6a4c93;
+    --vj-purpura-claro: #b392ac;
+    --vj-verde: #4fb09d;
+    --vj-fondo: #f8f9fa;
+    --vj-texto: #333333;
+}
+
+/* GENERAL */
+body {
+    background-color: var(--vj-fondo);
+    color: var(--vj-texto);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* NAVEGACIÓN Y BOTÓN VOLVER */
+.nav-detalle {
+    background: white;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.btn-volver {
+    text-decoration: none;
+    color: var(--vj-purpura-oscuro);
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 2px solid var(--vj-purpura-claro);
+    border-radius: 50px; /* Formato redondeado solicitado */
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.btn-volver .flecha {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: var(--vj-purpura-oscuro);
+    color: white;
+    border-color: var(--vj-purpura-oscuro);
+    box-shadow: 0 4px 12px rgba(106, 76, 147, 0.3);
+}
+
+.btn-volver:hover .flecha {
+    transform: translateX(-5px);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor-proyecto {
+    max-width: 950px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ENCABEZADO */
+.proyecto-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.meta-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #fdfafc;
+    padding: 20px;
+    border-left: 6px solid var(--vj-purpura-claro);
+    border-radius: 5px;
+}
+
+/* SECCIONES */
+.seccion { margin-top: 50px; }
+
+.seccion h2 {
+    color: var(--vj-purpura-oscuro);
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.callout {
+    background: #f0ebf4;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--vj-purpura-oscuro);
+    margin: 20px 0;
+}
+
+.lista-videojuegos { list-style: "🎮  "; padding-left: 20px; }
+
+.lista-videojuegos li { margin-bottom: 10px; }
+
+/* IMÁGENES */
+.contenedor-img-proyecto { margin: 30px 0; text-align: center; }
+
+.img-evidencia {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard-destacado-vj .img-evidencia {
+    border: 3px solid var(--vj-purpura-claro);
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* CONCLUSIONES */
+.conclusiones-vj {
+    background: linear-gradient(135deg, var(--vj-purpura-oscuro), var(--vj-purpura-claro));
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.conclusiones-vj h2 { color: white; border-color: rgba(255,255,255,0.3); }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contenedor-proyecto { padding: 25px; margin: 15px; }
+    .meta-data { flex-direction: column; }
+}

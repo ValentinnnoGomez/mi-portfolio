@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.nav-detalle {
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-detalle a {
+    text-decoration: none;
+    color: #4a4ae2;
+    font-weight: bold;
+}
+
+.contenedor-proyecto {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Encabezado */
+.proyecto-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.meta-data {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #a39677; /* El color de tu portfolio */
+}
+
+/* Secciones */
+.seccion {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #a39677;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.destacado {
+    background: #eff3ff;
+    padding: 15px;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.lista-preguntas li {
+    margin-bottom: 10px;
+    list-style-type: "✔ ";
+}
+
+.paso {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+}
+
+/* Simulación de imagen */
+.placeholder-img {
+    width: 100%;
+    height: 300px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Conclusiones */
+.conclusiones {
+    background: #a39677;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.conclusiones h2 {
+    color: white;
+    border-color: rgba(255,255,255,0.3);
+}
